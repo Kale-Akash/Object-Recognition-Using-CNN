@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task 8</title>
+</head>
+<body>    
+    <div class="Header">
+        <div class="Task_Name">Object Recognition Using CNN</div>
+    </div> 
+    <div class="main">
+     	 <div class="glass"> 
+              <div class="container">
+                  <div class="card">
+                     <div class="contain">
+                  	<h2 class="h2"></h2>
+                  	<h3 class="h3">Enter Car Number Here</h3>  
+                     <div>
+                       <input id="cmd_prompt" placeholder="Enter Number"/>
+                     </div>
+                     <pre>
+                         <div id="output_msg">
+                            Registration Name: XYZ
+                            Ownership: Second Owner
+                            Registration Date: 19th Jun 2012
+                            Car Name: Audi
+                            Car Number: MH13 BN 8454
+                            Engine NO: CHM0XXXXX
+                            Market Model: AUDI AG, AUDI A4 1.0 TDI
+                            Fuel: DIESEL
+                            RC Status: ACTIVE
+                            Vehicle Age: 9years
+                            Vehicle Class: Motor Car (LMW) 
+                         </div>
+                     </pre>
+                </div>
+            </div>  
+            <center><button onclick = Car_info() class="btn"> RUN </button></center> 
+       </div>
+   </div>
+</div>
+<script>
+    function Car_info() {
+        var inputValue;
+		inputValue = document.getElementById("cmd_prompt").value
+		document.getElementById("output_msg").style.display = "block"
+    }
+</script>
+
+<div class = "footer">
+	<p>&copy; Copyright @2021 &diams; Developed By: Akash Kale</p>
+</div>
+
+</body>
+<html>
